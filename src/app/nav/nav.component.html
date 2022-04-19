@@ -1,25 +1,27 @@
 <div class="all">
     <div class="container" id="hey">
-        <div class="row">
+        <div class="row" >
         <div class=" col-6 ">
             <a class="navbar-brand text-color fs-1" ><i class="fab fa-github"></i> Github-Search</a>
             <br>
             <form  class="mt-2">
                 <div class="input-group rounded">
                     <input type="text" id="search" name="username" class="form-control rounded inputSearch" [(ngModel)]="username" placeholder="Github UserName.." aria-label="Search" aria-describedby="search-addon" />
-                </div>
-                <div class="d-flex justify-content-center mt-2">
+                
+               
                     <button type="submit" appHiglight class="btn button text-light "(click)=" searchUser()">search </button>
-                </div>
+            
+            </div>
             </form>
         </div>
       </div>
     </div>
     <br><br>
     <div class="userdesc"  *ngIf="user">
-        <img src="{{user.avatar_url}}" height="200rem" width="200rem">
+        <img src="{{user.avatar_url}}"  width="300rem">
         <p>Name: {{user.name}}</p>
         <p>Location:{{user.location}}</p>
+        <p>Bio:{{user.Bio}}</p> 
         <p>Followers:{{user.followers}}</p>
         <p>Following:{{user.following}}</p>
         <p>Repos:{{user.public_repos}}</p>

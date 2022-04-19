@@ -1,14 +1,23 @@
 .all{
-    background-color: rgb(2, 2, 59);
+    background-color: rgb(5, 5, 5);
 }
 #hey {
-    background-color: #45D4D4;
+    background-color: #dd0256;
+    height: 150px;
+    width:100rem ;
+}
+img{
+    border-radius: 50%;
+    height: 45%;
+    outline: 2px solid black;
+    margin-right: 50%;
+   
 }
 .text-color {
     color: white;
 }
 .navbar-brand {
-    box-shadow: 4px 4px 4px rgb(2, 2, 59);
+    box-shadow: 4px 4px 4px rgb(5, 5, 5);
 }
 .fab {
     color: white;
@@ -18,9 +27,9 @@
     flex-direction: row;
 }
 .card-body {
-    /* border-right: 8px solid rgb(120, 209, 205); */
-    background-color:#45d4d4;
-    box-shadow: 4px 4px 4px rgb(2, 2, 59)
+   
+    background-color:#dd0256;
+    box-shadow: 4px 4px 4px rgb(2, 2, 2)
 }
 .reps{
     margin-top: 4rem;
@@ -35,9 +44,16 @@ flex-wrap: wrap;
 margin-left: 10rem;
 }
 .userdesc{
-    margin-left: 52rem;
+    /* margin-left: 45rem; */
     color: white;
+    text-align: center;
+ 
 }
 #search{
-    box-shadow: 4px 4px 4px rgb(2, 2, 59)
+    box-shadow: 4px 4px 4px rgb(5, 5, 5)
+}
+.btn{
+    background-color: #050505;
+    box-shadow: 4px 4px 4px rgb(248, 246, 246)
+
 }

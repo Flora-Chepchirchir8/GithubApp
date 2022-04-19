@@ -8,19 +8,17 @@ import { environment } from "./../environments/environment";
 })
 export class GitSearchService {
   username: string;
-  // userProfile: User;
-  // result:any
+
   constructor(private http: HttpClient) {
     console.log('Github Service Ready...');
-    this.username =  'brigid-chepkemoi';
+    this.username =  'Flora-Chepchirchir8';
   }
   getUser() {
     interface ApiResponse{
     }
-    // let promise = new Promise<void>((resolve, reject)=>{
     return this.http.get('https://api.github.com/users/' + this.username)
     .pipe(map(result => result));
-    // })
+   
   }
   getRepos() {
     return this.http.get(' https://api.github.com/users/' + this.username + '/repos')

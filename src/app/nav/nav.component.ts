@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-// import { GitsearchFormComponent } from '../gitsearch-form/gitsearch-form.component';
+
 import { GitSearchService } from '../git-search.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
-  // providers: [GitSearchService]
+  
 })
 export class NavComponent implements OnInit {
   username!: string;
