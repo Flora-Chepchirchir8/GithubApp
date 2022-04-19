@@ -68,8 +68,9 @@ flex-wrap: wrap;
     width: 150px;
     height: 35px;
     color: rgb(255, 250, 250);
-  
     font-size: 15px;
+    background-color: #dd0256;
+    
     border-radius: 10px;
   
 }
