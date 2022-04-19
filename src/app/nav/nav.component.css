@@ -10,7 +10,7 @@ img{
     border-radius: 50%;
     height: 45%;
     outline: 2px solid black;
-    margin-right: 50%;
+    margin-left: 5%;
    
 }
 .text-color {
@@ -35,18 +35,21 @@ img{
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-    margin-left: 5rem;
+    margin-left: 3rem;
+    color: black;
 }
 .cont2{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-margin-left: 10rem;
+
 }
 .userdesc{
     /* margin-left: 45rem; */
     color: white;
     text-align: center;
+    display: flex;
+    margin-top: 5%;
  
 }
 #search{
@@ -56,4 +59,8 @@ margin-left: 10rem;
     background-color: #050505;
     box-shadow: 4px 4px 4px rgb(248, 246, 246)
 
+}
+.desc{
+    margin-left: 7%;
+    margin-top: 2%;
 }

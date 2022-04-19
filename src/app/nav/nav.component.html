@@ -19,15 +19,17 @@
     <br><br>
     <div class="userdesc"  *ngIf="user">
         <img src="{{user.avatar_url}}"  width="300rem">
+        <div class="desc">
         <p>Name: {{user.name}}</p>
         <p>Location:{{user.location}}</p>
         <p>Bio:{{user.Bio}}</p> 
         <p>Followers:{{user.followers}}</p>
         <p>Following:{{user.following}}</p>
-        <p>Repos:{{user.public_repos}}</p>
+        <p>Repositories:{{user.public_repos}}</p>
+    </div>
     </div>
     <div class="row">
-    <div class="container" id="cont2" style="display: flex; flex-direction: row; flex-wrap: wrap;margin-left: 10rem;">
+    <div class="container" id="cont2" style="display: flex; flex-direction: row; flex-wrap: wrap;margin-left: 5rem; margin-top: 2%;">
      <div class="reps" *ngFor="let repo of repositories">
          <div class="card" style="width: 20rem; height: 23rem; ">
          <div class="card-header" >
