@@ -1,36 +1,29 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchGitComponent } from './search-git/search-git.component';
-import { RepoComponent } from './repo/repo.component';
-import { NotfoundComponent } from './notfound/notfound.component';
 import { NavComponent } from './nav/nav.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from "@angular/common/http";
-import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.component';
-import { HighlightDirective } from './highlight.directive';
-import { TimeAgoPipe } from './time-ago.pipe';
 
+import { GitSearchService } from './git-search.service';
+import { DatePipePipe } from './date-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    SearchGitComponent,
-    RepoComponent,
-    NotfoundComponent,
     NavComponent,
-    GitsearchFormComponent,
-    HighlightDirective,
-    TimeAgoPipe
+   
+    DatePipePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
-  providers: [],
+  providers: [GitSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

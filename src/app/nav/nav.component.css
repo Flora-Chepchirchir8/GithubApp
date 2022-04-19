@@ -1,15 +1,43 @@
-.container {
-    background-color: #0A192F;
+.all{
+    background-color: rgb(2, 2, 59);
 }
-
+#hey {
+    background-color: #45D4D4;
+}
 .text-color {
-    color: rgb(85, 152, 218);
+    color: white;
 }
-
-.navbar {
-    box-shadow: 4px 4px 4px #5c326a;
+.navbar-brand {
+    box-shadow: 4px 4px 4px rgb(2, 2, 59);
 }
-
 .fab {
-    color: #5c326a;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.card-body {
+    /* border-right: 8px solid rgb(120, 209, 205); */
+    background-color:#45d4d4;
+    box-shadow: 4px 4px 4px rgb(2, 2, 59)
+}
+.reps{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+}
+.cont2{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 10rem;
+}
+.userdesc{
+    margin-left: 52rem;
+    color: white;
+}
+#search{
+    box-shadow: 4px 4px 4px rgb(2, 2, 59)
 }

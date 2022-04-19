@@ -1,10 +1,43 @@
-<div class="container">
-    <nav class="navbar navbar-light bg-transparent mt-3 mb-3 backgro">
-        <div class="container-fluid d-flex justify-content-between">
-            <a class="navbar-brand text-color" routerLink="/Home"><i class="fas fa-search"></i
-        ></a>
-
-            <a class="navbar-brand text-color fs-1"><i class="fab fa-github"></i> Github-Search</a>
+<div class="all">
+    <div class="container" id="hey">
+        <div class="row">
+        <div class=" col-6 ">
+            <a class="navbar-brand text-color fs-1" ><i class="fab fa-github"></i> Github-Search</a>
+            <br>
+            <form  class="mt-2">
+                <div class="input-group rounded">
+                    <input type="text" id="search" name="username" class="form-control rounded inputSearch" [(ngModel)]="username" placeholder="Github UserName.." aria-label="Search" aria-describedby="search-addon" />
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                    <button type="submit" appHiglight class="btn button text-light "(click)=" searchUser()">search </button>
+                </div>
+            </form>
         </div>
-    </nav>
-</div>
+      </div>
+    </div>
+    <br><br>
+    <div class="userdesc"  *ngIf="user">
+        <img src="{{user.avatar_url}}" height="200rem" width="200rem">
+        <p>Name: {{user.name}}</p>
+        <p>Location:{{user.location}}</p>
+        <p>Followers:{{user.followers}}</p>
+        <p>Following:{{user.following}}</p>
+        <p>Repos:{{user.public_repos}}</p>
+    </div>
+    <div class="row">
+    <div class="container" id="cont2" style="display: flex; flex-direction: row; flex-wrap: wrap;margin-left: 10rem;">
+     <div class="reps" *ngFor="let repo of repositories">
+         <div class="card" style="width: 20rem; height: 23rem; ">
+         <div class="card-header" >
+    <h2>{{repo.name}}</h2>
+    <div class="card-body " >
+    <p>{{repo.description}}</p>
+    <p>{{repo.language}}</p>
+    <p>{{repo.create_at|date}}</p>
+     </div>
+    </div>
+    </div>
+    </div>
+     </div>
+    </div>
+    </div>
